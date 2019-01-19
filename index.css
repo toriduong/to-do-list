@@ -1,0 +1,22 @@
+body {
+  background-color: gray;
+}
+
+.container {
+  background-color: blue;
+  border-radius: 5px;
+}
+
+/*remove margins and padding from the list */
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+/* style for the list items */
+ul li {
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: white;
+  font-size: 18px;
+}
