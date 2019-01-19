@@ -1,22 +1,66 @@
 body {
   background-color: gray;
+  font-family: 'Hind Vadodara', sans-serif;
+  margin: 10px 20px 0 20px;
 }
 
 .container {
-  background-color: blue;
+  background-color: white;
   border-radius: 5px;
-}
-
-/*remove margins and padding from the list */
-ul{
-  margin: 0;
-  padding: 0;
+  padding: 0 20px 20px 0;
 }
 
 /* style for the list items */
 ul li {
+  cursor: pointer;
   position: relative;
-  padding: 12px 8px 12px 40px;
+  padding: 20px 0 20px 0;
   background: white;
   font-size: 18px;
+  list-style-type: none;
+  border-bottom: black solid 1px;
+}
+
+/* hide default checkbox */
+.check input {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+/* customizing label */
+.check {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* style checkbox */
+.checkmark {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  height: 24px;
+  width: 24px;
+  border-color: blue;
+  background-color: blue;
+  border-radius: 50%;
+}
+
+/* on mouse-over, add fill */
+.check:hover input ~  .checkmark {
+  display: block;
+  background-color: blue;
+  cursor: pointer;
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+  top: 4;
+  left: 4;
 }
