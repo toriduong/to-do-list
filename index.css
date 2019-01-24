@@ -1,13 +1,13 @@
 body {
   background-color: gray;
   font-family: 'Hind Vadodara', sans-serif;
-  margin: 10px 20px 0 20px;
+  width: 412px;
+  margin: auto;
 }
 
 .container {
   background-color: white;
   border-radius: 5px;
-  padding: 1px 0 1px 0;
 }
 
 ul {
@@ -17,16 +17,14 @@ ul {
 /* style for the list items */
 .container li {
   cursor: pointer;
-  position: relative;
-  padding: 20px 0 20px 20px;
-  background: white;
   font-size: 18px;
   list-style-type: none;
   border-bottom: black solid 1px;
 }
 
 .check {
-  padding-left: 40px;
+  padding: 20px;
+  padding-left: 55px;
 }
 
 /* hide default checkbox */
@@ -52,7 +50,7 @@ ul {
 .checkmark {
   position: absolute;
   cursor: pointer;
-  left: 0;
+  left: 15px;
   height: 24px;
   width: 24px;
   border: 1px solid gray;
@@ -60,7 +58,7 @@ ul {
 }
 
 /* on mouse-over, add fill */
-.container li:hover {
+.check:hover {
   cursor: pointer;
   background-color: lightgray;
   transition: 0.2s;
@@ -100,4 +98,10 @@ li .checkmark:after {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+/* round corners of first and last list items */
+#first {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
